@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
 using OptimizeMePlease.Entities;
 
 namespace OptimizeMePlease.Context
@@ -8,6 +9,7 @@ namespace OptimizeMePlease.Context
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer("Server=localhost; Database=OptimizeMePlease; Trusted_Connection=True; Integrated Security=true; MultipleActiveResultSets=true; Encrypt=false;");
+            //options.LogTo(Console.WriteLine);
         }
 
         public DbSet<User> Users { get; set; }
