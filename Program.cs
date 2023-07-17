@@ -23,16 +23,16 @@ namespace OptimizeMePlease
         static void Main()
         {
             //Debugging
-            // BenchmarkService benchmarkService = new BenchmarkService();
-            // var results = benchmarkService.GetAuthors();
-            // var results2 = benchmarkService.GetAuthors_Optimized();
+            BenchmarkService benchmarkService = new BenchmarkService();
+            var results = benchmarkService.GetAuthors();
+            var results2 = benchmarkService.GetAuthors_Optimized();
             //var p = benchmarkService.GetAuthors_Optimized_Struct();
             //var d = benchmarkService.GetAuthors_Optimized_Struct1();
 
             //Comment me after first execution, please.
             //IWillPopulateData();
 
-            BenchmarkRunner.Run<BenchmarkService>();
+            //BenchmarkRunner.Run<BenchmarkService>();
         }
 
         // public static void IWillPopulateData()

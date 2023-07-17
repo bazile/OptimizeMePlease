@@ -23,6 +23,19 @@ namespace OptimizeMePlease
         public string AuthorNickName { get; set; }
     }
 
+    public  class AuthorDTO2
+    {
+        public string UserFirstName { get; set; }
+        public string UserLastName { get; set; }
+        public string UserName { get; set; }
+        public string UserEmail { get; set; }
+        public int AuthorAge { get; set; }
+        public string AuthorCountry { get; set; }
+        public int BooksCount { get; set; }
+        public ICollection<BookDto> AllBooks { get; set; }
+    }
+
+
     public sealed class AuthorDTO_Optimized
     {
         public string FirstName { get; set; }
